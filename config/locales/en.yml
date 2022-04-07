@@ -2,4 +2,14 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  spree:
+    promotion_action_types:
+      buy_one_get_one:
+        name: Buy One Get One
+        description: Buy One Get another one free.
+      buy_one_get_half:
+        name: Buy One Get half
+        description: Buy One Get another half free.
+      buy_two_get_one:
+        name: Buy Two Get One
+        description: Buy Two Get another one free.
