@@ -1,7 +1,7 @@
 module Spree
   class Promotion
     module Actions
-      class CreateItemAdjustments
+      module CreateItemAdjustmentsDecorator
         def perform(options = {})
           order = options[:order]
           promotion = options[:promotion]
@@ -25,3 +25,5 @@ module Spree
     end
   end
 end
+
+::Spree::Promotion::Actions::CreateItemAdjustments.prepend ::Spree::Promotion::Actions::CreateItemAdjustmentsDecorator
