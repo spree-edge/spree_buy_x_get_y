@@ -1,6 +1,11 @@
-# SpreeBogo
+#  **bluebash-spree-contrib/spree-bogo**
 
-Introduction goes here.
+## 🤔 **About the project**
+* Spree extension for adding Promotions.
+* This extension will add following actions in spree backend.
+  * Buy One Get One
+  * Buy Two Get Two
+  * BUy One Get Half
 
 ## Installation
 
@@ -34,22 +39,8 @@ First bundle your dependencies, then run `rake`. `rake` will default to building
 bundle update
 bundle exec rake
 ```
-
-When testing your applications integration with this extension you may use it's factories.
-Simply add this require statement to your spec_helper:
-
-```ruby
-require 'spree_bogo/factories'
-```
-
-## Releasing
-
-```shell
-bundle exec gem bump -p -t
-bundle exec gem release
-```
-
-For more options please see [gem-release README](https://github.com/svenfuchs/gem-release)
+5. Screenshots
+ <img width="1000px" src="https://user-images.githubusercontent.com/80692612/162381916-0803bd99-c1fb-4dd5-819e-e89720ae3b19.png">
 
 ## Contributing
 
@@ -57,4 +48,6 @@ If you'd like to contribute, please take a look at the
 [instructions](CONTRIBUTING.md) for installing dependencies and crafting a good
 pull request.
 
-Copyright (c) 2022 [name of extension creator], released under the New BSD License
+Copyright (c) 2022 bluebash-spree-team, released under the New BSD License
+
+Made with ❤️ by **[@bluebash-spree-team](https://github.com/bluebash-spree-contrib)**
