@@ -1,6 +1,6 @@
 #  **spree_bogo**
 
-## 🤔 **About the project**
+## **About the project**
 * This extension customize the spree promotions and add following promotion actions.
   * Buy One Get One
   * Buy Two Get Two
