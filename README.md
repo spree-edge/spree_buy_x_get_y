@@ -1,11 +1,10 @@
-#  **bluebash-spree-contrib/spree-bogo**
+#  **spree_bogo**
 
 ## 🤔 **About the project**
-* Spree extension for adding Promotions.
-* This extension will add following actions in spree backend.
+* This extension customize the spree promotions and add following promotion actions.
   * Buy One Get One
   * Buy Two Get Two
-  * BUy One Get Half
+  * Buy One Get Half
 
 ## Installation
 
