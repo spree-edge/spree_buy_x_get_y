@@ -1,10 +1,18 @@
-#  **spree_bogo**
+#  **Spree Bogo**
 
 ## **About the project**
+* This Spree Extension gives user ability to create promotion on the basis of quantity of the product.
+* User can created promotions like Buy One Get One and Buy Two Get One etc for individual products and line items.
+
+## **Feature List**
 * This extension customize the spree promotions and add following promotion actions.
   * Buy One Get One
   * Buy Two Get Two
   * Buy One Get Half
+
+## **Demo**
+<img width="1000px" src="https://user-images.githubusercontent.com/80692612/163324308-344c1dca-7acf-42bb-9977-9293631d24f7.png">
+<img width="1000px" src="https://user-images.githubusercontent.com/80692612/163324317-c884a17e-f7f7-4c96-b2d0-5699f15fcaa5.png">
 
 ## Installation
 
@@ -38,15 +46,11 @@ First bundle your dependencies, then run `rake`. `rake` will default to building
 bundle update
 bundle exec rake
 ```
-5. Screenshots
- <img width="1000px" src="https://user-images.githubusercontent.com/80692612/162381916-0803bd99-c1fb-4dd5-819e-e89720ae3b19.png">
 
 ## Contributing
 
-If you'd like to contribute, please take a look at the
-[instructions](CONTRIBUTING.md) for installing dependencies and crafting a good
-pull request.
+[See corresponding guidelines](https://github.com/bluebash-spree-contrib/spree_bogo/blob/master/CONTRIBUTING.md)
 
-Copyright (c) 2022 bluebash-spree-team, released under the New BSD License
+---
 
-Made with ❤️ by **[@bluebash-spree-team](https://github.com/bluebash-spree-contrib)**
+Copyright (c) 2022 Spree Edge. released under the [New BSD License](https://github.com/bluebash-spree-contrib/spree_order_notes/blob/master/LICENSE)
