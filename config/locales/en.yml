@@ -4,12 +4,7 @@
 en:
   spree:
     promotion_action_types:
-      buy_one_get_one:
-        name: Buy One Get One
-        description: Buy One Get another one free.
-      buy_one_get_half:
-        name: Buy One Get half
-        description: Buy One Get another half free.
-      buy_two_get_one:
-        name: Buy Two Get One
-        description: Buy Two Get another one free.
+      buy_x_get_y:
+        name: Buy X Get Y
+        description: Buy X qauntity And Get Y quantity
+  bogo_promotion: Calculate the price for the promotion on the basis of quantity of the line item.

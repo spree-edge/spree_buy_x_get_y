@@ -20,10 +20,11 @@ module SpreeBogo
     end
 
     config.to_prepare(&method(:activate).to_proc)
+
     config.after_initialize do
-      Rails.application.config.spree.promotions.actions << ::Spree::Promotion::Actions::BuyOneGetHalf
-      Rails.application.config.spree.promotions.actions << ::Spree::Promotion::Actions::BuyOneGetOne
-      Rails.application.config.spree.promotions.actions << ::Spree::Promotion::Actions::BuyTwoGetOne
+      config = Rails.application.config
+      config.spree.promotions.actions << ::Spree::Promotion::Actions::BuyXGetY
+      config.spree.calculators.promotion_actions_create_adjustments << ::Spree::Calculator::BogoLineItemAdjustment
     end
   end
 end

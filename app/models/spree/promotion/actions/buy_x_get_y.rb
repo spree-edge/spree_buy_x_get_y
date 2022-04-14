@@ -1,7 +1,12 @@
 module Spree
   class Promotion
     module Actions
-      module BogoLineItemAdjustmentCalculator
+      class BuyXGetY < ::Spree::PromotionAction
+        include Spree::CalculatedAdjustments
+        include Spree::AdjustmentSource
+
+        before_validation -> { self.calculator ||= Calculator::BogoLineItemAdjustment.new }
+
         # Returns a hash like:
         ## => { 1: 100, 2: 20 } aka: { line_item_id: line_item_price }
         ## => Basically a mapping of line_item_ids and applicable BOGO
@@ -29,7 +34,8 @@ module Spree
         def perform(options = {})
           promotion = options[:promotion]
           order = options[:order]
-          adjustments_by_line_items = adjustment_by_line_item(order, promotion, self.class::BUY_N, self.class::GET_N)
+          adjustments_by_line_items = adjustment_by_line_item(order, promotion, self.calculator.preferences[:buy_x],
+                                                              self.calculator.preferences[:get_y])
           adjustments_by_line_items.map do |line_item_id, _adj_amount|
             line_item = order.line_items.detect { |li| li.id == line_item_id }
             create_unique_adjustment(order, line_item)
@@ -37,7 +43,8 @@ module Spree
         end
 
         def compute_amount(line_item)
-          adjustments_by_line_items = adjustment_by_line_item(line_item.order, promotion, self.class::BUY_N, self.class::GET_N, line_item.product)
+          adjustments_by_line_items = adjustment_by_line_item(line_item.order, promotion, self.calculator.preferences[:buy_x],
+                                                              self.calculator.preferences[:get_y])
           adjustments_by_line_items[line_item.id] || 0.0
         end
 
