@@ -17,8 +17,8 @@ module Spree
               line_item_adjustments[line_item[:id]] ||= 0
               if get_n == 0.5 && buy_n == 1
                 line_item_adjustments[line_item[:id]] -= (line_item[:price] * get_n) if idx.odd?
-              else
-                line_item_adjustments[line_item[:id]] -= (line_item[:price] * get_n) if idx % (buy_n + get_n) == buy_n
+              elsif idx % (buy_n + get_n) == buy_n
+                line_item_adjustments[line_item[:id]] -= (line_item[:price] * get_n)
               end
             end
           end
@@ -58,7 +58,7 @@ module Spree
                                     product.line_items.where(order_id: order.id)
                                   else
                                     order.line_items
-          end
+                                  end
 
           applicable_line_items.each do |line_item|
             next unless promotion.line_item_actionable?(order, line_item)
