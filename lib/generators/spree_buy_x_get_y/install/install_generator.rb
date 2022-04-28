@@ -1,10 +1,10 @@
-module SpreeBogo
+module SpreeBuyXGetY
   module Generators
     class InstallGenerator < Rails::Generators::Base
       class_option :migrate, type: :boolean, default: true
 
       def add_migrations
-        run 'bundle exec rake railties:install:migrations FROM=spree_bogo'
+        run 'bundle exec rake railties:install:migrations FROM=spree_buy_x_get_y'
       end
 
       def run_migrations
