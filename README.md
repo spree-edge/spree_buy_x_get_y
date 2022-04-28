@@ -1,6 +1,6 @@
-#  **Spree Bogo**
+#  **Spree_buy_x_get_y**
 
-## **About the project**
+## **About**
 * This Spree Extension gives user ability to create promotion on the basis of quantity of the product.
 * User can created promotions like Buy One Get One and Buy Two Get One etc for individual products and line items.
 
@@ -19,7 +19,7 @@
 1. Add this extension to your Gemfile with this line:
 
     ```ruby
-    gem 'spree_bogo'
+    gem 'spree_buy_x_get_y'
     ```
 
 2. Install the gem using Bundler

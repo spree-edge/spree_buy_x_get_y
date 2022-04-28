@@ -1,4 +1,4 @@
-module SpreeBogo
+module SpreeBuyXGetY
   VERSION = '0.0.1'.freeze
 
   module_function

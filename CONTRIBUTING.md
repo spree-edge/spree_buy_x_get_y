@@ -1,6 +1,6 @@
 # Contributing
 
-Spree Bogo is an open source project and we encourage contributions.
+Spree buy_x_get_y is an open source project and we encourage contributions.
 
 In the spirit of free software, **everyone** is encouraged to help improve this project.
 

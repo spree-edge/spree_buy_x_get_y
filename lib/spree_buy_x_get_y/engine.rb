@@ -1,16 +1,16 @@
-module SpreeBogo
+module SpreeBuyXGetY
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name 'spree_bogo'
+    engine_name 'spree_buy_x_get_y'
 
     # use rspec for tests
     config.generators do |g|
       g.test_framework :rspec
     end
 
-    initializer 'spree_bogo.environment', before: :load_config_initializers do |_app|
-      SpreeBogo::Config = SpreeBogo::Configuration.new
+    initializer 'spree_buy_x_get_y.environment', before: :load_config_initializers do |_app|
+      SpreeBuyXGetY::Config = SpreeBuyXGetY::Configuration.new
     end
 
     def self.activate
