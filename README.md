@@ -1,4 +1,4 @@
-#  **Spree_buy_x_get_y**
+#  **Spree Buy X Get Y Free**
 
 ## **About**
 * This Spree Extension gives user ability to create promotion on the basis of quantity of the product.
