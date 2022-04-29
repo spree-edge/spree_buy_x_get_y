@@ -31,7 +31,7 @@
 3. Copy & run migrations
 
     ```ruby
-    bundle exec rails g spree_bogo:install
+    bundle exec rails g spree_buy_x_get_y:install
     ```
 
 4. Restart your server
@@ -49,7 +49,7 @@ bundle exec rake
 
 ## Contributing
 
-[See corresponding guidelines](https://github.com/bluebash-spree-contrib/spree_bogo/blob/master/CONTRIBUTING.md)
+[See corresponding guidelines](https://github.com/bluebash-spree-contrib/spree_buy_x_get_y/blob/master/CONTRIBUTING.md)
 
 ---
 
