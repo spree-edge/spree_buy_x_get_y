@@ -6,7 +6,7 @@ en:
     promotion_action_types:
       buy_x_get_y:
         name: Buy X Get Y
-        description: Buy X quantity And Get Y quantity
-  bogo_promotion: Calculate the price for the promotion on the basis of quantity of the line item.
+        description: Buy X quantity and Get Y quantity
+  buy_x_get_y_promotion: Calculate the price for the promotion on the basis of quantity of the line item.
   buy_x : Buy X
   get_y: Get Y
