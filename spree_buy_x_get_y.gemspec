@@ -8,13 +8,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_buy_x_get_y'
   s.version     = SpreeBuyXGetY.version
-  s.summary     = 'Add extension summary here'
-  s.description = 'Add (optional) extension description here'
+  s.summary     = 'Spree Buy X Get Y'
+  s.description = 'A spree extension that provides ability to avail buy x get y free promotion'
   s.required_ruby_version = '>= 2.5'
 
-  s.author    = 'bluebash-spree-team'
-  s.email     = 'spree@bluebash.co'
-  s.homepage  = 'https://github.com/bluebash-spree-contrib/spree_buy_x_get_y'
+  s.author    = 'radolf-edge'
+  s.email     = 'radolf@bluebash.co'
+  s.homepage  = 'https://github.com/spree-edge/spree_buy_x_get_y'
   s.license = 'BSD-3-Clause'
 
   s.files       = `git ls-files`.split("\n").reject { |f| f.match(/^spec/) && !f.match(/^spec\/fixtures/) }
