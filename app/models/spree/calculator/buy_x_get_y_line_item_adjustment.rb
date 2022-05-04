@@ -1,7 +1,7 @@
 require_dependency 'spree/calculator'
 
 module Spree
-  class Calculator::BogoLineItemAdjustment < Calculator
+  class Calculator::BuyXGetYLineItemAdjustment < Calculator
     preference :buy_x, :integer, default: 0
     preference :get_y, :integer, default: 0
 
