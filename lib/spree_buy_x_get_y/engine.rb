@@ -24,7 +24,7 @@ module SpreeBuyXGetY
     config.after_initialize do
       config = Rails.application.config
       config.spree.promotions.actions << ::Spree::Promotion::Actions::BuyXGetY
-      config.spree.calculators.promotion_actions_create_adjustments << ::Spree::Calculator::BogoLineItemAdjustment
+      config.spree.calculators.promotion_actions_create_adjustments << ::Spree::Calculator::BuyXGetYLineItemAdjustment
     end
   end
 end

@@ -5,7 +5,7 @@ module Spree
         include Spree::CalculatedAdjustments
         include Spree::AdjustmentSource
 
-        before_validation -> { self.calculator ||= Calculator::BogoLineItemAdjustment.new }
+        before_validation -> { self.calculator ||= Calculator::BuyXGetYLineItemAdjustment.new }
 
         # Returns a hash like:
         ## => { 1: 100, 2: 20 } aka: { line_item_id: line_item_price }
