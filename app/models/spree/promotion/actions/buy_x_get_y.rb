@@ -20,9 +20,7 @@ module Spree
           flattenned_product_line_items.each_pair do |_product_id, line_items|
             line_items.each_with_index do |line_item, idx|
               line_item_adjustments[line_item[:id]] ||= 0
-              if get_n == 0.5 && buy_n == 1
-                line_item_adjustments[line_item[:id]] -= (line_item[:price] * get_n) if idx.odd?
-              elsif idx % (buy_n + get_n) == buy_n
+              if idx % (buy_n + get_n) == buy_n
                 line_item_adjustments[line_item[:id]] -= (line_item[:price] * get_n)
               end
             end
