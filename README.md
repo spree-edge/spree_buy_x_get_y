@@ -1,14 +1,16 @@
 #  **Spree Buy X Get Y Free**
 
 ## **About**
-* This Spree Extension gives user ability to create promotion on the basis of quantity of the product.
-* User can created promotions like Buy One Get One and Buy Two Get One etc for individual products and line items.
+* A spree extension that provides ability to have special discounts like Buy X Get Y free.
+* Adminsrated role user create customized promotions using this and configure the product quantity as per the need.
 
 ## **Feature List**
-* This extension customize the spree promotions and add following promotion actions.
+* This extension extends the spree promotions and provides ability to create different type of promotions. 
+  Some of the following promotions we can create are using this -
   * Buy One Get One
   * Buy Two Get Two
-  * Buy One Get Half
+  * Buy One Get Half and many others combinations.
+* These promotions can also be work in combination with the [spree product rule](https://user-docs.spreecommerce.org/promotions/creating-a-new-promotion#products)
 
 ## **Demo**
 <img width="1000px" src="https://user-images.githubusercontent.com/80692612/163324308-344c1dca-7acf-42bb-9977-9293631d24f7.png">
@@ -49,8 +51,8 @@ bundle exec rake
 
 ## Contributing
 
-[See corresponding guidelines](https://github.com/bluebash-spree-contrib/spree_buy_x_get_y/blob/master/CONTRIBUTING.md)
+[See corresponding guidelines](https://github.com/spree-edge/spree_buy_x_get_y/blob/master/CONTRIBUTING.md)
 
 ---
 
-Copyright (c) 2022 Spree Edge. released under the [New BSD License](https://github.com/bluebash-spree-contrib/spree_order_notes/blob/master/LICENSE)
+Copyright (c) 2022 Spree Edge. released under the [New BSD License](https://github.com/spree-edge/spree_buy_x_get_y/blob/master/LICENSE)
