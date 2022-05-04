@@ -6,7 +6,7 @@ module Spree
     preference :get_y, :integer, default: 0
 
     def self.description
-      Spree.t(:bogo_promotion)
+      Spree.t(:buy_x_get_y_promotion)
     end
   end
 end
