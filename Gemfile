@@ -7,4 +7,8 @@ end
 
 gem 'rails-controller-testing'
 
+group :development, :test do
+  gem 'pg'
+end
+
 gemspec
