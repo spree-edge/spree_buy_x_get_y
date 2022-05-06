@@ -10,7 +10,7 @@
   * Buy One Get One
   * Buy Two Get Two
   * Buy One Get Half and many others combinations.
-* These promotions can also be work in combination with the spree promotion [Product Rule](https://user-docs.spreecommerce.org/promotions/creating-a-new-promotion#products).
+* These promotions can also be work in combination with the spree [Product Rule](https://user-docs.spreecommerce.org/promotions/creating-a-new-promotion#products).
 
 ## **Demo**
 <img width="1000px" src="https://user-images.githubusercontent.com/80692612/163324308-344c1dca-7acf-42bb-9977-9293631d24f7.png">
