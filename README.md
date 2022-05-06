@@ -9,7 +9,7 @@
   Some of the following promotions we can create are using this -
   * Buy One Get One
   * Buy Two Get Two
-  * Buy One Get Half and many others combinations.
+  * Buy One Get Two and many others combinations.
 * These promotions can also be work in combination with the spree [Product Rule](https://user-docs.spreecommerce.org/promotions/creating-a-new-promotion#products).
 * This extension is supported by all storefronts -
   * [Legacy Storefront](https://demo.spreecommerce.org/)
