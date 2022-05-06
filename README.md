@@ -17,8 +17,7 @@
   * [NextJS Storefront](https://demo.vercel.store/)
 
 ## **Demo**
-<img width="1000px" src="https://user-images.githubusercontent.com/80692612/163324308-344c1dca-7acf-42bb-9977-9293631d24f7.png">
-<img width="1000px" src="https://user-images.githubusercontent.com/80692612/163324317-c884a17e-f7f7-4c96-b2d0-5699f15fcaa5.png">
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/103247578/167120522-1c268530-daec-44da-89a9-4c3763431f6d.gif)
 
 ## Installation
 
