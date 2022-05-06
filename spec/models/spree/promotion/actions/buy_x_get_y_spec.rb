@@ -9,13 +9,16 @@ describe Spree::Promotion::Actions::BuyXGetY, type: :model do
 
   it_behaves_like 'an adjustment source'
 
-  # From promotion spec:
+  def set_promotion(buy_x, buy_y)
+    action.calculator = calculator
+    action.calculator.preferences[:buy_x] = buy_x
+    action.calculator.preferences[:get_y] = buy_y
+    promotion.promotion_actions << action
+  end
+
   context '#buy_one_get_two' do
     before do
-      action.calculator = calculator
-      action.calculator.preferences[:buy_x] = 1
-      action.calculator.preferences[:get_y] = 2
-      promotion.promotion_actions << action
+      set_promotion(1, 2)
     end
 
     it 'create the discount on line item twice of its quanity' do
@@ -24,14 +27,10 @@ describe Spree::Promotion::Actions::BuyXGetY, type: :model do
     end
   end
 
-  # From promotion spec:
   context '#buy_one_get_one' do
     before do
-      action.calculator = calculator
-      action.calculator.preferences[:buy_x] = 1
-      action.calculator.preferences[:get_y] = 1
-      promotion.promotion_actions << action
-    end
+      set_promotion(1, 1)
+    end    
 
     it 'create the disount of line item based on its price' do
        expect(action.perform(payload)).to be true
@@ -43,10 +42,7 @@ describe Spree::Promotion::Actions::BuyXGetY, type: :model do
     let(:order) {  create(:order_with_line_item_quantity, line_items_quantity: 3) }
 
     before do
-      action.calculator = calculator
-      action.calculator.preferences[:buy_x] = 2
-      action.calculator.preferences[:get_y] = 1
-      promotion.promotion_actions << action
+      set_promotion(2, 1)
     end
 
     it 'provides one item as free on purchase of 2' do
@@ -56,3 +52,4 @@ describe Spree::Promotion::Actions::BuyXGetY, type: :model do
     end
   end
 end
+
